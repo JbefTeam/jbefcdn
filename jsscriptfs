@@ -1,0 +1,25 @@
+const Add_Custom_Style = css => document.head.appendChild(document.createElement(""style"")).innerHTML = css
+Add_Custom_Style(`const Add_Custom_Style = css => document.head.appendChild(document.createElement(""style"")).innerHTML = css
+Add_Custom_Style(`
+    div.prolog-runners{
+    background-size: 0;
+}
+
+.navbar {
+    position: relative;
+    bottom: 100px;
+}
+
+ul {
+    position: relative;
+    bottom: 500px;
+}
+
+span.runner-state.aborted, span.runner-state.error {
+    background-image: url(https://img.icons8.com/fluency/42/cancel.png);
+}
+
+span.runner-state.false, span.runner-state.stopped, span.runner-state.true {
+    background-image: url(https://img.icons8.com/fluency/42/ok--v1.png);
+}
+    `)`)
